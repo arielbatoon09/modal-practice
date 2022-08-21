@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1240px;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+.modal-background{
+    max-width: 100%;
+    background: #9B9B9B;
+    transition: all 0.2s ease-in-out;
+}
+.title{
+    font-size: 2rem;
+}
+.author{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    background: #9ED2C6;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    pointer-events: auto;
+}
+.btn:hover, 
+.btn:active{
+    background: #54BAB9;
+}
+.modal-container{
+    position: fixed;
+    background: #EAEAEA;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    pointer-events: none;
+    max-width: 600px;
+    opacity: 0;
+}
+.modal{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+.modal > p{
+    margin: 1rem 0;
+}
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
